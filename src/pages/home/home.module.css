@@ -1,0 +1,168 @@
+.container {
+  margin: 0 1.4rem;
+}
+
+.form {
+  margin-top: 3.6rem;
+  width: 100%;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.form input {
+  width: 100%;
+  height: 4.4rem;
+  border: 0;
+  padding: 0 0.8rem;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.form input:focus {
+  border: 0.2rem solid #34a634;
+  box-shadow: 0 0 0.8rem #89d489;
+}
+
+.form button {
+  background: transparent;
+  transition: all ease 0.3s;
+}
+
+.form button:hover {
+  scale: 1.2;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 1.4rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.6rem;
+  margin: 0.5rem 0.75rem;
+}
+
+.tr:nth-child(odd) {
+  background-color: #1d1c20;
+}
+
+td:first-child,
+th:first-child {
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+table th,
+table td {
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.tdLabel {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.tdUp {
+  color: #23c552;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.tdDown {
+  color: #ff0f0f;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.btnMore {
+  background-color: #2e932e;
+  padding: 1rem 2.2rem;
+  color: #ebf8eb;
+  border-radius: 0.4rem;
+  transition: all ease 0.3s;
+  box-shadow: rgba(99, 240, 99, 0.5) 0px 2px 8px;
+}
+
+.btnMore:hover {
+  background-color: #61c661;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo {
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: all 1s;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+  z-index: 99;
+}
+
+@media screen and (max-width: 60rem) {
+  .tr {
+    background-color: #1d1c20;
+  }
+  .name img {
+    margin-left: 1.4rem;
+  }
+  table {
+    border: 0;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 0.1rem;
+    margin: -0.1rem;
+    overflow: hidden;
+    position: absolute;
+    width: 0.1rem;
+    padding: 0;
+  }
+
+  .tr {
+    border-bottom: 0.1rem solid #ddd;
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+  table td {
+    border-bottom: 0.1rem solid rgba(221, 221, 221, 0.17);
+    display: block;
+    text-align: right;
+    font-size: 1.4rem;
+  }
+  table td::before {
+    content: attr(data-label);
+    margin-top: 0.2rem;
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+  td:first-child,
+  th:first-child {
+    border-radius: 0;
+  }
+
+  td:last-child,
+  th:last-child {
+    border-radius: none;
+  }
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #18171c;
+  width: 100%;
+  max-width: 108rem;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  color: #ebf8eb;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ebf8eb;
+}

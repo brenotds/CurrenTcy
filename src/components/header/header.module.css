@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+  max-width: 108rem;
+}
+
+.logo {
+  display: block;
+  width: 36rem;
+}
