@@ -53,7 +53,7 @@ export function Detail() {
             setLoading(false);
           });
       } catch (err) {
-        console.log(err);
+    
         navigate("/");
       }
     }
@@ -64,7 +64,7 @@ export function Detail() {
   if (loading || !coin) {
     return (
       <div className={styles.container}>
-        <h4 className={styles.center}>Carregando detalhes...</h4>
+        <h4 className={styles.center}>Loading details...</h4>
       </div>
     );
   }
